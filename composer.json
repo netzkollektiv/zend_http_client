@@ -1,7 +1,7 @@
 {
     "name": "recensus/zend-http-client",
     "type": "library",
-    "description": "Http Client For PHP5.1 and Above",
+    "description": "Http client For PHP5.1 and above. Originally part of ZF1.11",
     "keywords": ["http"],
     "homepage": "http://github.com/recensus/zend_http_client",
     "license": "BSD",
