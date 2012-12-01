@@ -1,0 +1,22 @@
+{
+    "name": "recensus/zend-http-client",
+    "type": "library",
+    "description": "Http Client For PHP5.1 and Above",
+    "keywords": ["http"],
+    "homepage": "http://github.com/recensus/zend_http_client",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Ben Waine",
+            "email": "ben@recensus.com",
+            "homepage": "app.recensus.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=5.1.0"
+    },
+    "autoload": {
+        "classmap": ["src/Zend"]
+    }
+}
