@@ -586,7 +586,7 @@ class Zend_Http_Client
      */
     public function setCookieJar($cookiejar = true)
     {
-        Zend_Loader::loadClass('Zend_Http_CookieJar');
+        //Zend_Loader::loadClass('Zend_Http_CookieJar');
 
         if ($cookiejar instanceof Zend_Http_CookieJar) {
             $this->cookiejar = $cookiejar;
@@ -624,7 +624,7 @@ class Zend_Http_Client
      */
     public function setCookie($cookie, $value = null)
     {
-        Zend_Loader::loadClass('Zend_Http_Cookie');
+        //Zend_Loader::loadClass('Zend_Http_Cookie');
 
         if (is_array($cookie)) {
             foreach ($cookie as $c => $v) {
@@ -838,7 +838,7 @@ class Zend_Http_Client
     {
         if (is_string($adapter)) {
             try {
-                Zend_Loader::loadClass($adapter);
+                //Zend_Loader::loadClass($adapter);
             } catch (Zend_Exception $e) {
                 /** @see Zend_Http_Client_Exception */
                 // require_once 'Zend/Http/Client/Exception.php';
