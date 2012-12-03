@@ -206,7 +206,7 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
         //'CN'  => 'Hostname/Cn.php',
         'CN'  => 'Zend_Validate_Hostname_Cn',
         //'COM' => 'Zend/Validate/Hostname/Com.php',
-        'COM' => 'Zend_Validate_Hostname_Com.',
+        'COM' => 'Zend_Validate_Hostname_Com',
         'DE'  => array(1 => '/^[\x{002d}0-9a-zà-öø-ÿăąāćĉčċďđĕěėęēğĝġģĥħĭĩįīıĵķĺľļłńňņŋŏőōœĸŕřŗśŝšşťţŧŭůűũųūŵŷźžż]{1,63}$/iu'),
         'DK'  => array(1 => '/^[\x{002d}0-9a-zäéöü]{1,63}$/iu'),
         'ES'  => array(1 => '/^[\x{002d}0-9a-zàáçèéíïñòóúü·]{1,63}$/iu'),
@@ -580,7 +580,7 @@ class Zend_Validate_Hostname extends Zend_Validate_Abstract
                     if ($this->_options['idn'] &&  isset($this->_validIdns[strtoupper($this->_tld)])) {
                         if (is_string($this->_validIdns[strtoupper($this->_tld)])) {
                             //$regexChars += include($this->_validIdns[strtoupper($this->_tld)]);
-                            $regexChars += call_user_func(array($this->_validIdns[strtoupper($this->_tld)], '::getValidationData'));
+                            $regexChars += call_user_func(array($this->_validIdns[strtoupper($this->_tld)], 'getValidationData'));
                         } else {
                             $regexChars += $this->_validIdns[strtoupper($this->_tld)];
                         }
