@@ -5,6 +5,7 @@
     "keywords": ["http"],
     "homepage": "http://github.com/netzkollektiv/zend_http_client",
     "license": "BSD-3-Clause",
+    "homepage": "https://netzkollektiv.com",
     "authors": [
         {
             "name": "Dominik Krebs",
